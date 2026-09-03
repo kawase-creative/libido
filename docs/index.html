@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="想像を超えた未来を現実にする、本気のリビドー・コーチング。無料動画プレゼント。">
+  <title>リビドー・コーチング｜無料動画プレゼント</title>
+  <style>
+    :root{--gold:#d8a934;--bright:#f3c754}*{box-sizing:border-box}html,body{margin:0;min-width:320px;background:#000;color:#fff;font-family:"Hiragino Mincho ProN","Yu Mincho",YuMincho,serif}button,input{font:inherit}.page{min-height:100vh;display:flex;justify-content:center}.visual{position:relative;width:min(100%,942px);line-height:0;box-shadow:0 0 80px rgba(225,171,53,.12)}.visual img{display:block;width:100%;height:auto}.cta{position:absolute;z-index:2;left:5.9%;top:84.55%;width:88.1%;height:10.3%;border:0;border-radius:16px;background:transparent;color:transparent;cursor:pointer;transition:.2s}.cta:hover{background:rgba(255,233,164,.08);box-shadow:inset 0 0 30px rgba(255,243,202,.16)}.cta:focus-visible{outline:4px solid #fff3bd;outline-offset:-7px}.backdrop{position:fixed;inset:0;z-index:10;display:none;place-items:center;padding:20px;background:rgba(0,0,0,.8);backdrop-filter:blur(8px)}.backdrop.open{display:grid;animation:fade .2s ease-out}.modal{position:relative;width:min(100%,500px);border:1px solid rgba(225,177,60,.75);border-radius:20px;padding:42px;background:linear-gradient(145deg,rgba(255,255,255,.03),transparent 45%),radial-gradient(circle at 50% 0,#29200d,#12100c 38%,#080807);box-shadow:0 24px 90px rgba(0,0,0,.72),0 0 42px rgba(217,166,43,.15);text-align:center;line-height:1.5;animation:up .25s ease-out}.close{position:absolute;top:14px;right:14px;width:38px;height:38px;border:0;border-radius:50%;background:rgba(255,255,255,.08);color:#eee;cursor:pointer;font:24px sans-serif}.icon{display:grid;place-items:center;width:64px;height:64px;margin:0 auto 16px;border:1px solid var(--gold);border-radius:50%;background:linear-gradient(145deg,#e9bd52,#aa7617);box-shadow:0 0 26px rgba(227,176,55,.32);color:#090806;font:28px sans-serif}.kicker{margin:0 0 5px;color:var(--bright);font:12px Georgia,serif;letter-spacing:.24em}.modal h1{margin:0;font-size:clamp(26px,6vw,34px);font-weight:500;letter-spacing:.08em}.lead{margin:8px 0 27px;color:#c9c2b2;font-size:14px}form{text-align:left}label{display:block;margin:17px 0 7px;font-size:14px;letter-spacing:.05em}label b{margin-left:7px;border:1px solid rgba(224,171,47,.55);border-radius:3px;padding:2px 6px;color:var(--bright);font-size:10px;font-weight:500}input{width:100%;border:1px solid #4e452f;border-radius:8px;padding:13px 14px;outline:0;background:rgba(255,255,255,.06);color:#fff;font-family:"Yu Gothic",sans-serif;font-size:16px}input:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(220,169,48,.14)}.submit{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;margin-top:28px;border:1px solid #ffda73;border-radius:10px;padding:15px 18px;background:linear-gradient(115deg,#b9851f,#f0c95f 48%,#b57b16);box-shadow:0 8px 28px rgba(220,169,48,.24);color:#090806;cursor:pointer;font-size:18px;font-weight:700;letter-spacing:.08em}.thanks{display:none;padding:22px 0 4px}.thanks .icon{width:76px;height:76px;font-size:36px}.download{margin:22px 0 6px;color:#f3ead2;font-size:18px}.note{margin:0;color:#9f9888;font-size:13px}.secondary{margin-top:29px;border:1px solid #6f5b2d;border-radius:8px;padding:10px 34px;background:transparent;color:#d9cda9;cursor:pointer}@keyframes fade{from{opacity:0}}@keyframes up{from{opacity:0;transform:translateY(16px) scale(.975)}}@media(max-width:560px){.backdrop{align-items:end;padding:0}.modal{width:100%;border-radius:22px 22px 0 0;padding:34px 24px 30px}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="visual" aria-label="リビドー・コーチング 無料動画プレゼント">
+      <img src="libido-coaching.png" alt="想像を超えた未来を現実にする、本気のリビドー・コーチング。">
+      <button class="cta" id="open" type="button" aria-label="無料動画を受け取る">無料動画を受け取る</button>
+    </section>
+  </main>
+  <div class="backdrop" id="backdrop">
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="title">
+      <button class="close" id="close" type="button" aria-label="閉じる">×</button>
+      <div id="formView">
+        <div class="icon" aria-hidden="true">↓</div>
+        <p class="kicker">SPECIAL VIDEO</p>
+        <h1 id="title">無料動画を受け取る</h1>
+        <p class="lead">お名前とメールアドレスをご入力ください。</p>
+        <form id="form">
+          <label for="name">氏名 <b>必須</b></label>
+          <input id="name" name="name" autocomplete="name" required placeholder="山田 太郎">
+          <label for="email">メールアドレス <b>必須</b></label>
+          <input id="email" name="email" type="email" autocomplete="email" required placeholder="example@email.com">
+          <button class="submit" type="submit">無料動画を受け取る　›</button>
+        </form>
+      </div>
+      <div class="thanks" id="thanks">
+        <div class="icon" aria-hidden="true">✓</div>
+        <p class="kicker">THANK YOU</p>
+        <h1>ありがとうございます</h1>
+        <p class="download">ビデオをダウンロードしています…</p>
+        <p class="note">まもなくダウンロードが始まります。</p>
+        <button class="secondary" id="done" type="button">閉じる</button>
+      </div>
+    </section>
+  </div>
+  <script>
+    const backdrop=document.getElementById('backdrop'),formView=document.getElementById('formView'),thanks=document.getElementById('thanks'),nameInput=document.getElementById('name');
+    const openModal=()=>{backdrop.classList.add('open');document.body.style.overflow='hidden';setTimeout(()=>nameInput.focus(),80)};
+    const closeModal=()=>{backdrop.classList.remove('open');document.body.style.overflow='';setTimeout(()=>{formView.style.display='block';thanks.style.display='none';document.getElementById('form').reset()},200)};
+    document.getElementById('open').addEventListener('click',openModal);
+    document.getElementById('close').addEventListener('click',closeModal);
+    document.getElementById('done').addEventListener('click',closeModal);
+    backdrop.addEventListener('click',e=>{if(e.target===backdrop)closeModal()});
+    document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+    document.getElementById('form').addEventListener('submit',e=>{e.preventDefault();formView.style.display='none';thanks.style.display='block'});
+  </script>
+</body>
+</html>
