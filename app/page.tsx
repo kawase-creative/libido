@@ -111,7 +111,7 @@ export default function Home() {
               <small>なぜ変われなかったのか？</small>
               <strong>無料動画3本で、その理由を知る</strong>
             </span>
-            <ArrowRight className="cta-arrow" size={31} aria-hidden="true" />
+            <ArrowRight className="cta-arrow" size={42} strokeWidth={2.35} aria-hidden="true" />
           </DialogTrigger>
 
           <DialogContent className="modal-panel">
