@@ -3,10 +3,10 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: 'リビドー・コーチング｜無料動画プレゼント',
-  description: '想像を超えた未来を現実にする、本気のリビドー・コーチング。無料動画をお受け取りください。',
+  description: '変われない原因は「意志の弱さ」ではありません。本能の仕組みを知り、頑張らなくても動ける自分へ。',
   openGraph: {
     title: 'リビドー・コーチング｜無料動画プレゼント',
-    description: '想像を超えた未来を現実にする、本気のリビドー・コーチング。',
+    description: '本能の仕組みを知り、頑張らなくても動ける自分へ。',
     images: ['/libido-coaching.png'],
   },
 };
