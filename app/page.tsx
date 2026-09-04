@@ -52,7 +52,6 @@ export default function Home() {
     <main className="site-shell">
       <section className="hero" aria-labelledby="hero-title">
         <div className="hero-glow" aria-hidden="true" />
-        <div className="portrait" aria-hidden="true"><img src="/fv-reference.png" alt="" /></div>
 
         <div className="hero-inner">
           <header className="brand-row">
@@ -62,6 +61,8 @@ export default function Home() {
               <span>THE LIBIDO COACHING</span>
             </div>
           </header>
+
+          <div className="portrait" aria-hidden="true"><img src="/fv-reference.png" alt="" /></div>
 
           <div className="hero-copy">
             <p className="eyebrow">学んでも、決意しても、<br />なぜか元の自分に戻ってしまうあなたへ。</p>
