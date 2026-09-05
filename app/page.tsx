@@ -1,6 +1,6 @@
 'use client';
 
-import { FormEvent, useEffect, useState } from 'react';
+import { FormEvent, useState } from 'react';
 import { ArrowRight, BarChart3, Brain, Check, ChevronRight, Download, Footprints, LoaderCircle, Play } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
@@ -23,40 +23,6 @@ const results = [
 export default function Home() {
   const [open, setOpen] = useState(false);
   const [submitState, setSubmitState] = useState<SubmitState>('idle');
-
-  useEffect(() => {
-    if (!open) return;
-
-    const root = document.documentElement;
-    const viewport = window.visualViewport;
-    let frame = 0;
-
-    const updateModalViewport = () => {
-      const viewportTop = viewport?.offsetTop ?? 0;
-      const viewportHeight = viewport?.height ?? window.innerHeight;
-      root.style.setProperty('--modal-viewport-top', `${Math.max(0, viewportTop) + 8}px`);
-      root.style.setProperty('--modal-viewport-height', `${Math.max(280, viewportHeight - 16)}px`);
-    };
-
-    const scheduleUpdate = () => {
-      window.cancelAnimationFrame(frame);
-      frame = window.requestAnimationFrame(updateModalViewport);
-    };
-
-    updateModalViewport();
-    viewport?.addEventListener('resize', scheduleUpdate);
-    viewport?.addEventListener('scroll', scheduleUpdate);
-    window.addEventListener('resize', scheduleUpdate);
-
-    return () => {
-      window.cancelAnimationFrame(frame);
-      viewport?.removeEventListener('resize', scheduleUpdate);
-      viewport?.removeEventListener('scroll', scheduleUpdate);
-      window.removeEventListener('resize', scheduleUpdate);
-      root.style.removeProperty('--modal-viewport-top');
-      root.style.removeProperty('--modal-viewport-height');
-    };
-  }, [open]);
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
