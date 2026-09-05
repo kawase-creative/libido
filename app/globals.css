@@ -171,7 +171,7 @@ button { -webkit-tap-highlight-color: transparent; }
   .hero-lead br { display: none; }
   .offer-title { margin-inline: -5px; }
   .benefit p { font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif; }
-  [data-slot="dialog-content"].modal-panel { left: 50%; right: auto; top: max(8px, env(safe-area-inset-top)); bottom: auto; width: calc(100% - 16px); max-width: calc(100% - 16px); max-height: calc(100svh - env(safe-area-inset-top) - 16px); translate: -50% 0; transform: none; overflow-x: hidden; overflow-y: auto; overscroll-behavior: contain; border-radius: 22px; padding: 30px 20px max(24px, env(safe-area-inset-bottom)); }
+  [data-slot="dialog-content"].modal-panel { left: 50%; right: auto; top: var(--modal-viewport-top, 8px); bottom: auto; width: calc(100% - 16px); max-width: calc(100% - 16px); max-height: var(--modal-viewport-height, calc(100svh - 16px)); translate: -50% 0; transform: none; overflow-x: hidden; overflow-y: auto; overscroll-behavior: contain; border-radius: 22px; padding: 30px 20px max(24px, env(safe-area-inset-bottom)); }
   .modal-panel::before { border-radius: 16px; }
   .modal-icon, .success-icon { width: 56px; height: 56px; margin-bottom: 12px; }
   .modal-title { font-size: clamp(24px, 7.4vw, 30px); }
