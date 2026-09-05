@@ -169,8 +169,12 @@ button { -webkit-tap-highlight-color: transparent; }
   .hero-lead br { display: none; }
   .offer-title { margin-inline: -5px; }
   .benefit p { font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif; }
-  .modal-panel { left: 0; right: 0; top: auto; bottom: 0; width: 100%; max-width: 100%; translate: 0 0; transform: none; border-radius: 22px 22px 0 0; padding: 34px 24px 30px; }
+  [data-slot="dialog-content"].modal-panel { left: 50%; right: auto; top: auto; bottom: 0; width: calc(100% - 16px); max-width: calc(100% - 16px); max-height: calc(100dvh - env(safe-area-inset-top) - 8px); translate: -50% 0; transform: none; overflow-x: hidden; overflow-y: auto; overscroll-behavior: contain; border-radius: 22px 22px 0 0; padding: 30px 20px max(24px, env(safe-area-inset-bottom)); }
   .modal-panel::before { border-radius: 16px 16px 0 0; }
+  .modal-icon, .success-icon { width: 56px; height: 56px; margin-bottom: 12px; }
+  .modal-title { font-size: clamp(24px, 7.4vw, 30px); }
+  .signup-form label { margin-top: 14px; }
+  .submit-button { margin-top: 22px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
