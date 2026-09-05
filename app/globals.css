@@ -108,8 +108,10 @@ button { -webkit-tap-highlight-color: transparent; }
 .signup-form [data-slot="input"]:focus-visible { border-color: var(--gold); box-shadow: 0 0 0 3px rgb(220 169 48 / 14%); }
 .honeypot { position: absolute; left: -9999px; opacity: 0; pointer-events: none; }
 .form-error { margin: 12px 0 -7px; color: #ffb3a8; font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif; font-size: 13px; line-height: 1.5; }
-.submit-button { display: flex; width: 100%; height: 56px; margin-top: 28px; border: 1px solid #ffda73; background: linear-gradient(115deg, #b9851f, #f0c95f 48%, #b57b16); box-shadow: 0 8px 28px rgb(220 169 48 / 24%), inset 0 1px 0 rgb(255 255 255 / 55%); color: #090806; font-size: 18px; font-weight: 700; letter-spacing: .08em; }
-.submit-button:hover { filter: brightness(1.08); }
+.submit-button { position: relative; display: flex; width: 100%; height: 56px; margin-top: 28px; overflow: hidden; border: 1px solid #ffda73; background: linear-gradient(115deg, #b9851f, #f0c95f 48%, #b57b16); box-shadow: 0 8px 28px rgb(220 169 48 / 24%), inset 0 1px 0 rgb(255 255 255 / 55%); color: #090806; font-size: 18px; font-weight: 700; letter-spacing: .08em; transition: filter .2s ease, box-shadow .2s ease, transform .2s ease; }
+.submit-button::after { content: ""; position: absolute; top: -70%; left: -38%; width: 24%; height: 240%; pointer-events: none; background: linear-gradient(90deg, transparent, rgb(255 255 255 / 88%), transparent); transform: rotate(22deg); animation: shimmer 3.3s ease-in-out infinite; }
+.submit-button:hover { filter: brightness(1.08); box-shadow: 0 10px 34px rgb(220 169 48 / 36%), inset 0 1px 0 rgb(255 255 255 / 68%); }
+.submit-button:active { transform: translateY(1px) scale(.995); }
 .spin { animation: spin .8s linear infinite; }
 .success-state { padding: 22px 0 4px; text-align: center; }
 .success-icon { width: 76px; height: 76px; }
@@ -169,8 +171,8 @@ button { -webkit-tap-highlight-color: transparent; }
   .hero-lead br { display: none; }
   .offer-title { margin-inline: -5px; }
   .benefit p { font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif; }
-  [data-slot="dialog-content"].modal-panel { left: 50%; right: auto; top: auto; bottom: 0; width: calc(100% - 16px); max-width: calc(100% - 16px); max-height: calc(100dvh - env(safe-area-inset-top) - 8px); translate: -50% 0; transform: none; overflow-x: hidden; overflow-y: auto; overscroll-behavior: contain; border-radius: 22px 22px 0 0; padding: 30px 20px max(24px, env(safe-area-inset-bottom)); }
-  .modal-panel::before { border-radius: 16px 16px 0 0; }
+  [data-slot="dialog-content"].modal-panel { left: 50%; right: auto; top: max(8px, env(safe-area-inset-top)); bottom: auto; width: calc(100% - 16px); max-width: calc(100% - 16px); max-height: calc(100svh - env(safe-area-inset-top) - 16px); translate: -50% 0; transform: none; overflow-x: hidden; overflow-y: auto; overscroll-behavior: contain; border-radius: 22px; padding: 30px 20px max(24px, env(safe-area-inset-bottom)); }
+  .modal-panel::before { border-radius: 16px; }
   .modal-icon, .success-icon { width: 56px; height: 56px; margin-bottom: 12px; }
   .modal-title { font-size: clamp(24px, 7.4vw, 30px); }
   .signup-form label { margin-top: 14px; }
