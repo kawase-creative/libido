@@ -115,7 +115,7 @@ export default function Home() {
             <ArrowRight className="cta-arrow" size={42} strokeWidth={2.35} aria-hidden="true" />
           </DialogTrigger>
 
-          <DialogContent className="modal-panel">
+          <DialogContent className="modal-panel" centered={false}>
             {submitState !== 'success' ? (
               <>
                 <DialogHeader className="modal-header">
