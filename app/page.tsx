@@ -164,7 +164,7 @@ export default function Home() {
                   <input className="honeypot" type="text" name="_honey" tabIndex={-1} autoComplete="off" />
 
                   <label htmlFor="name">氏名 <strong>必須</strong></label>
-                  <Input id="name" name="name" type="text" autoComplete="name" required placeholder="山田 太郎" autoFocus />
+                  <Input id="name" name="name" type="text" autoComplete="name" required placeholder="山田 太郎" />
 
                   <label htmlFor="email">メールアドレス <strong>必須</strong></label>
                   <Input id="email" name="email" type="email" autoComplete="email" required placeholder="example@email.com" />
