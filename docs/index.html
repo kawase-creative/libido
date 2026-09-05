@@ -2,56 +2,141 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="想像を超えた未来を現実にする、本気のリビドー・コーチング。無料動画プレゼント。">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="変われない原因は意志の弱さではありません。本能の仕組みを知り、自然に行動できる自分へ。">
+  <meta name="theme-color" content="#020303">
   <title>リビドー・コーチング｜無料動画プレゼント</title>
-  <style>
-    :root{--gold:#d8a934;--bright:#f3c754}*{box-sizing:border-box}html,body{margin:0;min-width:320px;background:#000;color:#fff;font-family:"Hiragino Mincho ProN","Yu Mincho",YuMincho,serif}button,input{font:inherit}.page{min-height:100vh;display:flex;justify-content:center}.visual{position:relative;width:min(100%,942px);line-height:0;box-shadow:0 0 80px rgba(225,171,53,.12)}.visual img{display:block;width:100%;height:auto}.cta{position:absolute;z-index:2;left:5.9%;top:84.55%;width:88.1%;height:10.3%;border:0;border-radius:16px;background:transparent;color:transparent;cursor:pointer;transition:.2s}.cta:hover{background:rgba(255,233,164,.08);box-shadow:inset 0 0 30px rgba(255,243,202,.16)}.cta:focus-visible{outline:4px solid #fff3bd;outline-offset:-7px}.backdrop{position:fixed;inset:0;z-index:10;display:none;place-items:center;padding:20px;background:rgba(0,0,0,.8);backdrop-filter:blur(8px)}.backdrop.open{display:grid;animation:fade .2s ease-out}.modal{position:relative;width:min(100%,500px);border:1px solid rgba(225,177,60,.75);border-radius:20px;padding:42px;background:linear-gradient(145deg,rgba(255,255,255,.03),transparent 45%),radial-gradient(circle at 50% 0,#29200d,#12100c 38%,#080807);box-shadow:0 24px 90px rgba(0,0,0,.72),0 0 42px rgba(217,166,43,.15);text-align:center;line-height:1.5;animation:up .25s ease-out}.close{position:absolute;top:14px;right:14px;width:38px;height:38px;border:0;border-radius:50%;background:rgba(255,255,255,.08);color:#eee;cursor:pointer;font:24px sans-serif}.icon{display:grid;place-items:center;width:64px;height:64px;margin:0 auto 16px;border:1px solid var(--gold);border-radius:50%;background:linear-gradient(145deg,#e9bd52,#aa7617);box-shadow:0 0 26px rgba(227,176,55,.32);color:#090806;font:28px sans-serif}.kicker{margin:0 0 5px;color:var(--bright);font:12px Georgia,serif;letter-spacing:.24em}.modal h1{margin:0;font-size:clamp(26px,6vw,34px);font-weight:500;letter-spacing:.08em}.lead{margin:8px 0 27px;color:#c9c2b2;font-size:14px}form{text-align:left}label{display:block;margin:17px 0 7px;font-size:14px;letter-spacing:.05em}label b{margin-left:7px;border:1px solid rgba(224,171,47,.55);border-radius:3px;padding:2px 6px;color:var(--bright);font-size:10px;font-weight:500}input{width:100%;border:1px solid #4e452f;border-radius:8px;padding:13px 14px;outline:0;background:rgba(255,255,255,.06);color:#fff;font-family:"Yu Gothic",sans-serif;font-size:16px}input:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(220,169,48,.14)}.submit{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;margin-top:28px;border:1px solid #ffda73;border-radius:10px;padding:15px 18px;background:linear-gradient(115deg,#b9851f,#f0c95f 48%,#b57b16);box-shadow:0 8px 28px rgba(220,169,48,.24);color:#090806;cursor:pointer;font-size:18px;font-weight:700;letter-spacing:.08em}.thanks{display:none;padding:22px 0 4px}.thanks .icon{width:76px;height:76px;font-size:36px}.download{margin:22px 0 6px;color:#f3ead2;font-size:18px}.note{margin:0;color:#9f9888;font-size:13px}.secondary{margin-top:29px;border:1px solid #6f5b2d;border-radius:8px;padding:10px 34px;background:transparent;color:#d9cda9;cursor:pointer}@keyframes fade{from{opacity:0}}@keyframes up{from{opacity:0;transform:translateY(16px) scale(.975)}}@media(max-width:560px){.backdrop{align-items:end;padding:0}.modal{width:100%;border-radius:22px 22px 0 0;padding:34px 24px 30px}}
-  </style>
+  <link rel="icon" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="page">
-    <section class="visual" aria-label="リビドー・コーチング 無料動画プレゼント">
-      <img src="libido-coaching.png" alt="想像を超えた未来を現実にする、本気のリビドー・コーチング。">
-      <button class="cta" id="open" type="button" aria-label="無料動画を受け取る">無料動画を受け取る</button>
+  <main class="site-shell">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <header class="brand-row">
+          <div class="brand-mark" aria-hidden="true"><span></span></div>
+          <div class="brand-copy"><p>リビドー・コーチング</p><span>THE LIBIDO COACHING</span></div>
+        </header>
+        <div class="portrait" aria-hidden="true"><img src="fv-reference.png" alt=""></div>
+        <div class="hero-copy">
+          <p class="eyebrow">学んでも、決意しても、<br>なぜか元の自分に戻ってしまうあなたへ。</p>
+          <h1 id="hero-title"><span>変われない原因は、</span><strong>「意志の弱さ」</strong><span>ではありません。</span></h1>
+          <p class="hero-lead">行動を止めている“本能の仕組み”を知り、<br>頑張らなくても動ける自分へ。</p>
+        </div>
+        <p class="hero-tagline">本能を味方に、<br>理想の人生を。</p>
+      </div>
+    </section>
+
+    <section class="offer" aria-label="プログラム概要">
+      <div class="offer-title"><span>リビドー・コーチング</span><small>本能心理 <b>×</b> 行動変容</small></div>
+      <div class="benefit-grid">
+        <article class="benefit">
+          <div class="benefit-icon" aria-hidden="true"><svg width="29" height="29" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 4A2.5 2.5 0 0 0 7 6.5v.25A3.5 3.5 0 0 0 5.5 13v2a3 3 0 0 0 3 3h1V4Z"/><path d="M14.5 4A2.5 2.5 0 0 1 17 6.5v.25A3.5 3.5 0 0 1 18.5 13v2a3 3 0 0 1-3 3h-1V4Z"/><path d="M9.5 9H8M14.5 9H16M9.5 14H8M14.5 14H16"/></svg></div>
+          <h2>自分の本能を知る</h2><p>欲求の仕組みを理解し、行動のブレーキを外す</p>
+        </article>
+        <article class="benefit">
+          <div class="benefit-icon" aria-hidden="true"><svg width="29" height="29" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16v-2.4c0-2 1.2-3.6 2.7-3.6S9 11.2 9 12.8C9 15.6 7 19 5 19c-.6 0-1-.8-1-3Z"/><path d="M15 9.2c0-1.6.8-2.8 2.3-2.8S20 8 20 10v2.4c0 2.2-.4 3-1 3-2 0-4-3.4-4-6.2Z"/><path d="M6 7.5v-.2M8 6v-.2M16 3.5v-.2M18 4.5v-.2"/></svg></div>
+          <h2>自然に行動できる</h2><p>無理な我慢ではなく、内側から動ける仕組みをつくる</p>
+        </article>
+        <article class="benefit">
+          <div class="benefit-icon" aria-hidden="true"><svg width="29" height="29" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V9M10 19V5M16 19v-7M22 19V3"/><path d="M2 21h22"/></svg></div>
+          <h2>理想の未来を現実に</h2><p>仕事・お金・パートナーシップ。人生全体をアップデート</p>
+        </article>
+      </div>
+      <div class="result-grid" aria-label="実績">
+        <div class="result"><span>受講者数</span><p>4,000<small>人</small></p><b>突破</b></div>
+        <div class="result"><span>リピート率</span><p>96.2<small>%</small></p></div>
+        <div class="result"><span>成果実感率</span><p>80.8<small>%</small></p></div>
+      </div>
+      <p class="disclaimer">※ 効果には個人差があります。</p>
+      <button class="hero-cta" id="openDialog" type="button" aria-haspopup="dialog">
+        <span class="cta-play" aria-hidden="true"><svg width="29" height="29" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7Z"/></svg></span>
+        <span class="cta-copy"><small>なぜ変われなかったのか？</small><strong>無料動画3本で、<br class="mobile-break">その理由を知る</strong></span>
+        <svg class="cta-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.35" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
     </section>
   </main>
-  <div class="backdrop" id="backdrop">
-    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="title">
-      <button class="close" id="close" type="button" aria-label="閉じる">×</button>
+
+  <div class="dialog-overlay" id="dialogOverlay" aria-hidden="true">
+    <section class="modal-panel" id="dialogPanel" data-slot="dialog-content" role="dialog" aria-modal="true" aria-labelledby="dialogTitle" tabindex="-1">
+      <button class="dialog-close" id="closeDialog" data-slot="dialog-close" type="button" aria-label="閉じる"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
       <div id="formView">
-        <div class="icon" aria-hidden="true">↓</div>
-        <p class="kicker">SPECIAL VIDEO</p>
-        <h1 id="title">無料動画を受け取る</h1>
-        <p class="lead">お名前とメールアドレスをご入力ください。</p>
-        <form id="form">
-          <label for="name">氏名 <b>必須</b></label>
-          <input id="name" name="name" autocomplete="name" required placeholder="山田 太郎">
-          <label for="email">メールアドレス <b>必須</b></label>
-          <input id="email" name="email" type="email" autocomplete="email" required placeholder="example@email.com">
-          <button class="submit" type="submit">無料動画を受け取る　›</button>
+        <header class="modal-header">
+          <div class="modal-icon" aria-hidden="true"><svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5"/><path d="M5 19v2h14v-2"/></svg></div>
+          <p class="modal-kicker">SPECIAL VIDEO</p>
+          <h2 class="modal-title" id="dialogTitle">無料動画を受け取る</h2>
+          <p class="modal-lead">お名前とメールアドレスをご入力ください。</p>
+        </header>
+        <form class="signup-form" id="signupForm">
+          <input type="hidden" name="_subject" value="リビドー・コーチング 無料動画申込み">
+          <input class="honeypot" type="text" name="_honey" tabindex="-1" autocomplete="off">
+          <label for="name">氏名 <strong>必須</strong></label>
+          <input data-slot="input" id="name" name="name" type="text" autocomplete="name" required placeholder="山田 太郎">
+          <label for="email">メールアドレス <strong>必須</strong></label>
+          <input data-slot="input" id="email" name="email" type="email" autocomplete="email" required placeholder="example@email.com">
+          <p class="form-error" id="formError" role="alert" hidden>送信できませんでした。通信環境をご確認のうえ、もう一度お試しください。</p>
+          <button class="submit-button" id="submitButton" type="submit">無料動画を受け取る <span aria-hidden="true">›</span></button>
         </form>
       </div>
-      <div class="thanks" id="thanks">
-        <div class="icon" aria-hidden="true">✓</div>
-        <p class="kicker">THANK YOU</p>
-        <h1>ありがとうございます</h1>
-        <p class="download">ビデオをダウンロードしています…</p>
-        <p class="note">まもなくダウンロードが始まります。</p>
-        <button class="secondary" id="done" type="button">閉じる</button>
+      <div class="success-state" id="successView" hidden>
+        <div class="success-icon" aria-hidden="true"><svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></div>
+        <p class="modal-kicker">THANK YOU</p><h2 class="modal-title">ありがとうございます</h2>
+        <p class="download-message">お申し込みを受け付けました。</p><p class="success-note">ご入力いただいたメールアドレスをご確認ください。</p>
+        <button class="secondary-button" id="doneButton" type="button">閉じる</button>
       </div>
     </section>
   </div>
+
   <script>
-    const backdrop=document.getElementById('backdrop'),formView=document.getElementById('formView'),thanks=document.getElementById('thanks'),nameInput=document.getElementById('name');
-    const openModal=()=>{backdrop.classList.add('open');document.body.style.overflow='hidden';setTimeout(()=>nameInput.focus(),80)};
-    const closeModal=()=>{backdrop.classList.remove('open');document.body.style.overflow='';setTimeout(()=>{formView.style.display='block';thanks.style.display='none';document.getElementById('form').reset()},200)};
-    document.getElementById('open').addEventListener('click',openModal);
-    document.getElementById('close').addEventListener('click',closeModal);
-    document.getElementById('done').addEventListener('click',closeModal);
-    backdrop.addEventListener('click',e=>{if(e.target===backdrop)closeModal()});
-    document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
-    document.getElementById('form').addEventListener('submit',e=>{e.preventDefault();formView.style.display='none';thanks.style.display='block'});
+    const overlay = document.getElementById('dialogOverlay');
+    const panel = document.getElementById('dialogPanel');
+    const form = document.getElementById('signupForm');
+    const formView = document.getElementById('formView');
+    const successView = document.getElementById('successView');
+    const errorMessage = document.getElementById('formError');
+    const submitButton = document.getElementById('submitButton');
+
+    function openDialog() {
+      overlay.classList.add('open');
+      overlay.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('dialog-open');
+      panel.scrollTop = 0;
+      panel.focus({ preventScroll: true });
+    }
+    function closeDialog() {
+      overlay.classList.remove('open');
+      overlay.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('dialog-open');
+      form.reset();
+      formView.hidden = false;
+      successView.hidden = true;
+      errorMessage.hidden = true;
+      submitButton.disabled = false;
+      submitButton.textContent = '無料動画を受け取る　›';
+    }
+    document.getElementById('openDialog').addEventListener('click', openDialog);
+    document.getElementById('closeDialog').addEventListener('click', closeDialog);
+    document.getElementById('doneButton').addEventListener('click', closeDialog);
+    overlay.addEventListener('click', event => { if (event.target === overlay) closeDialog(); });
+    document.addEventListener('keydown', event => { if (event.key === 'Escape' && overlay.classList.contains('open')) closeDialog(); });
+    form.addEventListener('submit', async event => {
+      event.preventDefault();
+      errorMessage.hidden = true;
+      submitButton.disabled = true;
+      submitButton.textContent = '送信しています…';
+      try {
+        const response = await fetch('https://formsubmit.co/ajax/1641494papa@gmail.com', { method: 'POST', headers: { Accept: 'application/json' }, body: new FormData(form) });
+        if (!response.ok) throw new Error('送信失敗');
+        formView.hidden = true;
+        successView.hidden = false;
+        panel.scrollTop = 0;
+      } catch {
+        errorMessage.hidden = false;
+        submitButton.disabled = false;
+        submitButton.textContent = '無料動画を受け取る　›';
+      }
+    });
   </script>
 </body>
 </html>
