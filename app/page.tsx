@@ -16,8 +16,8 @@ const benefits = [
 
 const results = [
   { label: '受講者数', value: '4,000', suffix: '人', note: '突破' },
-  { label: 'リピート率', value: '95.8', suffix: '%' },
-  { label: '成果実感率', value: '89.7', suffix: '%' },
+  { label: 'リピート率', value: '96.2', suffix: '%' },
+  { label: '成果実感率', value: '80.8', suffix: '%' },
 ];
 
 export default function Home() {
