@@ -48,7 +48,7 @@ button { -webkit-tap-highlight-color: transparent; }
 .brand-copy span { display: flex; align-items: center; gap: 12px; color: var(--gold-bright); font-family: Georgia, serif; font-size: 14px; letter-spacing: .16em; }
 .brand-copy span::before, .brand-copy span::after { content: ""; width: 38px; height: 1px; background: var(--gold); }
 
-.hero-copy { width: 57%; margin-top: 75px; }
+.hero-copy { position: relative; z-index: 2; width: 52%; margin-top: 75px; }
 .eyebrow { margin: 0 0 20px; color: #f7f4ec; font-size: clamp(21px, 3.2vw, 31px); line-height: 1.62; letter-spacing: .08em; text-shadow: 0 2px 12px #000; }
 .hero h1 { margin: 0; font-weight: 500; line-height: 1.12; letter-spacing: .01em; text-shadow: 0 3px 16px #000; }
 .hero h1 span { display: block; font-size: clamp(31px, 4.7vw, 48px); }
@@ -88,6 +88,7 @@ button { -webkit-tap-highlight-color: transparent; }
 .cta-copy { display: flex; flex-direction: column; align-items: flex-start; gap: 3px; text-align: left; white-space: normal; }
 .cta-copy small { border-radius: 5px; padding: 2px 9px; background: rgb(255 249 211 / 58%); font-size: 14px; font-weight: 700; letter-spacing: .05em; }
 .cta-copy strong { font-size: clamp(24px, 4vw, 38px); font-weight: 700; letter-spacing: .03em; line-height: 1.35; }
+.mobile-break { display: none; }
 .cta-arrow { justify-self: end; width: 42px; height: 42px; filter: drop-shadow(0 1px 0 rgb(255 255 255 / 24%)); }
 
 [data-slot="dialog-overlay"] { z-index: 50; background: rgb(0 0 0 / 78%); backdrop-filter: blur(8px); }
@@ -158,7 +159,8 @@ button { -webkit-tap-highlight-color: transparent; }
   .hero-cta { grid-template-columns: 54px 1fr 38px; min-height: 94px; border-radius: 15px; padding: 10px 14px; }
   .cta-play { width: 48px; height: 48px; }
   .cta-copy small { padding: 1px 5px; font-size: 10px; }
-  .cta-copy strong { font-size: clamp(18px, 5vw, 25px); }
+  .cta-copy strong { font-size: clamp(18px, 5vw, 25px); word-break: keep-all; overflow-wrap: normal; }
+  .mobile-break { display: block; }
   .cta-arrow { width: 32px; height: 32px; }
 }
 

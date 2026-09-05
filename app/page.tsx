@@ -1,7 +1,7 @@
 'use client';
 
 import { FormEvent, useState } from 'react';
-import { ArrowRight, BarChart3, Brain, Check, ChevronRight, Download, LoaderCircle, Play, PersonStanding } from 'lucide-react';
+import { ArrowRight, BarChart3, Brain, Check, ChevronRight, Download, Footprints, LoaderCircle, Play } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import { Input } from '@/components/ui/input';
@@ -10,7 +10,7 @@ type SubmitState = 'idle' | 'sending' | 'success' | 'error';
 
 const benefits = [
   { icon: Brain, title: '自分の本能を知る', text: '欲求の仕組みを理解し、行動のブレーキを外す' },
-  { icon: PersonStanding, title: '自然に行動できる', text: '無理な我慢ではなく、内側から動ける仕組みをつくる' },
+  { icon: Footprints, title: '自然に行動できる', text: '無理な我慢ではなく、内側から動ける仕組みをつくる' },
   { icon: BarChart3, title: '理想の未来を現実に', text: '仕事・お金・パートナーシップ。人生全体をアップデート' },
 ];
 
@@ -110,7 +110,7 @@ export default function Home() {
             <span className="cta-play" aria-hidden="true"><Play size={29} fill="currentColor" /></span>
             <span className="cta-copy">
               <small>なぜ変われなかったのか？</small>
-              <strong>無料動画3本で、その理由を知る</strong>
+              <strong>無料動画3本で、<br className="mobile-break" />その理由を知る</strong>
             </span>
             <ArrowRight className="cta-arrow" size={42} strokeWidth={2.35} aria-hidden="true" />
           </DialogTrigger>
