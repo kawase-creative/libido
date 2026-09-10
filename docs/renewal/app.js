@@ -1,13 +1,10 @@
 'use strict';
 const form = document.getElementById('registration-form');
-const result = document.getElementById('form-result');
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   if (!form.reportValidity()) return;
-  // Proposal preview: no network request, analytics, or browser storage.
-  result.hidden = false;
-  document.getElementById('email').value = '';
-  result.focus();
+  // Preview navigation only; email is not submitted or stored.
+  window.location.assign('https://genetics-code.net/lp/thanks.html');
 });
 const mobileAction = document.querySelector('.mobile-action');
 if ('IntersectionObserver' in window) {
