@@ -31,3 +31,17 @@ body{background:#fff;color:#222}.page{max-width:500px;box-shadow:none}.header{pa
 .step-photo{width:100%;height:auto;margin-top:20px;border-radius:3px}
 .phone-photo{max-width:310px;margin-left:auto;margin-right:auto}
 @media(max-width:370px){.concerns li{grid-template-columns:minmax(0,1fr) 27%}.concerns li>div{font-size:13px;padding-left:19px;padding-right:7px}.concerns li>img{min-height:140px}}
+
+/* Refined proof badges and elegant orange emphasis. */
+.hero-badges{gap:8px;margin:24px -4px 12px}
+.hero-badges>div{position:relative;border:0;outline:0;aspect-ratio:1;background:linear-gradient(#fff,#fff) padding-box,linear-gradient(145deg,#f4a15e 0%,#d86d25 46%,#a94616 100%) border-box;border:2px solid transparent;box-shadow:0 8px 22px #8e3d1214,inset 0 0 0 5px #fff,inset 0 0 0 6px #e58a45;padding:15px 6px 12px}
+.hero-badges>div:after{content:'';position:absolute;inset:8px;border-radius:50%;border:1px solid #efd0b6;pointer-events:none}
+.hero-badges .badge-title{position:relative;z-index:1;font-size:12px;line-height:1.45;font-weight:700;letter-spacing:-.02em}
+.hero-badges .badge-title-long{font-size:10px;line-height:1.45}
+.hero-badges sup{font-size:8px;color:#a45b2c;margin-left:2px}
+.hero-badges strong{position:relative;z-index:1;font-family:var(--sans);font-size:29px;font-weight:700;line-height:1.2;letter-spacing:-.06em;margin:4px 0}
+.hero-badges strong small{font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:0;margin:0 1px}
+.hero-badges .badge-bottom{position:relative;z-index:1;font-size:12px;font-weight:700}
+.badge-notes{font-size:10px!important;line-height:1.65!important;color:#777;text-align:left;margin:0 2px 23px}
+.highlight{background:linear-gradient(115deg,#b94f19 0%,#dc7432 48%,#a94216 100%);color:#fff;padding:2px 7px 3px;box-shadow:0 3px 10px #9d461522;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+@media(max-width:370px){.hero-badges{gap:5px;margin-left:-7px;margin-right:-7px}.hero-badges>div{padding-left:3px;padding-right:3px}.hero-badges .badge-title{font-size:10px}.hero-badges .badge-title-long{font-size:9px}.hero-badges strong{font-size:25px}.hero-badges strong small{font-size:9px}.hero-badges .badge-bottom{font-size:10px}}
