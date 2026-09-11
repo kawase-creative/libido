@@ -45,3 +45,16 @@ body{background:#fff;color:#222}.page{max-width:500px;box-shadow:none}.header{pa
 .badge-notes{font-size:10px!important;line-height:1.65!important;color:#777;text-align:left;margin:0 2px 23px}
 .highlight{background:linear-gradient(115deg,#b94f19 0%,#dc7432 48%,#a94216 100%);color:#fff;padding:2px 7px 3px;box-shadow:0 3px 10px #9d461522;box-decoration-break:clone;-webkit-box-decoration-break:clone}
 @media(max-width:370px){.hero-badges{gap:5px;margin-left:-7px;margin-right:-7px}.hero-badges>div{padding-left:3px;padding-right:3px}.hero-badges .badge-title{font-size:10px}.hero-badges .badge-title-long{font-size:9px}.hero-badges strong{font-size:25px}.hero-badges strong small{font-size:9px}.hero-badges .badge-bottom{font-size:10px}}
+
+/* Supplied photography for the three video steps. */
+.video-cover{min-height:220px;isolation:isolate;overflow:hidden;padding:24px}
+.video-cover-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:-2}
+.video-cover:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#f8f2eaeF 0%,#f8f2eac8 42%,#f8f2ea22 76%);z-index:-1}
+.cover-two:after{background:linear-gradient(90deg,#edf2efeF 0%,#edf2efc4 43%,#edf2ef18 78%)}
+.cover-three:after{background:linear-gradient(90deg,#edf2f5ef 0%,#edf2f5c4 43%,#edf2f51c 78%)}
+.video-cover>span,.video-cover>p{position:relative;z-index:1;max-width:70%}
+.video-cover i{z-index:2;box-shadow:0 6px 20px #1a26351f}
+.cover-one .video-cover-photo{object-position:58% 22%}
+.cover-two .video-cover-photo{object-position:54% 48%}
+.cover-three .video-cover-photo{object-position:53% 42%}
+@media(max-width:370px){.video-cover{min-height:205px;padding:20px}.video-cover p{font-size:22px}.video-cover i{right:18px;bottom:20px}}
